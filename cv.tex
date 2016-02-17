@@ -1,0 +1,219 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Alexander Chepurnoy Resume/CV
+% LaTeX Template
+% Version 1.1 (20/7/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Cies Breijs (cies@kde.nl)
+% https://github.com/cies/resume with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
+
+\include{structure} % Include structure.tex which contains packages and document layout definitions
+
+\hyphenation{Some-long-word} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+\begin{document} 
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\maintitle{Alexander Chepurnoy}{7$^{th}$ February 1984}  % Your name and date of birth or subtitle
+
+\noindent\href{mailto:kushti@protonmail.ch}{kushti@protonmail.ch}\bull % Your email address
+\textit{(Skype: sandylabs)}\bull % Your phone number(s) and Skype username
+\href{http://chepurnoy.org}{chepurnoy.org}\\ % Your URL
+Sestroretsk\bull Russia % Your address
+
+\spacedhrule{0.9em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Summary} % Root section title
+
+\vspace{-1.3em} % Reduce whitespace after the Summary heading and the two-column content
+
+\begin{multicols}{2}  % Start a two-column layout
+\noindent \textit{A summary}\\\\
+I am an experienced and passionated engineer and researcher. I have built many products while enjoying design, development and management processes. I tried many programming languages using current favourite one, Scala, since 2011. I love functional programming, programming languages theory and CS knowledge in general. 
+
+Previously I worked on data harvesting and analysis tools. Now I am living in the blockchain world and willing to continue to be here for coming years.  Also I love to have results of my work as open as possible to wider public. 
+
+\end{multicols}
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Experience} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://iohk.io/}{IOHK Research}}
+{
+
+\headedsubsection % Job title entry for the current employer
+{\acr{Project Scorex Director}/\acr{Researcher}}
+{Feb 2015 -- now}
+{\bodytext{Developing Scorex and doing a research on blockchains.}}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://smartcontract.com/}{Smart Contract}}
+{
+
+\headedsubsection % Job title entry for the current employer
+{\acr{CoFounder}/\acr{Backend Developer}}
+{Oct 2014 -- Dec 2015}
+{\bodytext{SmartContract is building escrow schemes automatically executed based on public datafeeds. Contracts and their updates are being written into Nxt blockchain in clear-text or hashed form. Previously the team built Secure Assets Exchange, web layer on top of decentralized Nxt Assets Exchange with some additional functionality. I designed and developen backend with Scala, Akka, Spray for both products, releasing \href{https://github.com/kushti/NxtScala}{NxtScala} open-source micro-framework on the way.}}
+}
+
+%------------------------------------------------
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://nxt.org}{Nxt cryptocurrency}}
+{
+
+\headedsubsection % Job title entry for the current employer
+{\acr{Core Developer}}
+{Apr 2014 -- Apr 2015}
+{\bodytext{Nxt is a cryptocurrency built from scratch, delivering decentralized economy platform. I developed first integration tests, alias transfer, voting system, 2-phased transactions(multisig for Nxt). Also I made some amount of documentation and specifications, key users support. }}
+
+\headedsubsection % Job title entry for the current employer
+{\acr{Consensus Research}}
+{Nov 2014 -- Feb 2015}
+{\bodytext{Consensus Research is informal research micro-group made research on Nxt-like Proof-of-Stake algorithm properties by gathering statistics from simulations made with Haskell and Coq. All known attacks were modelled along with papers published online.}}
+
+}
+
+%------------------------------------------------
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{NovaShelf} {
+
+\headedsubsection % Job title entry for the current employer
+{Freelance Software Engineer}
+{Sep 2013 -- Apr 2014}
+{\bodytext{Stealth mode startup developed a new approach to clusterize documents based on Kohonen Self-Organized Maps. I built a distributed and decentralized system for crawling/processing/semantic clusterization of documents using Scala, Akka, Riak, OpenNLP, Lucene.}}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{https://en.wikipedia.org/wiki/Domain_Developers_Fund}{Domain Developers Fund}} {
+
+\headedsubsection % Job title entry for the current employer
+{Freelance Software Engineer}
+{Jun 2013 -- Dec 2013}
+{\bodytext{Domain Developers Fund is the first public open-ended alternative investment fund exclusively invested in Internet domain names. It built a number of data collection and analysis tools using Scala, Java, Akka, MongoDB, Apache HttpClient, HtmlUnit, PlayFramework.}}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{HedgeWallet} {
+
+\headedsubsection % Job title entry for the current employer
+{Freelance Software Engineer}
+{Mar 2013 -- Nov 2013}
+{\bodytext{Stealth mode startup to hold bitcoins and fiat currencies with auto hedging. I built user web application backend using Groovy, Grails, ProstgreSQL}}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{RankRust} {
+
+\headedsubsection % Job title entry for the current employer
+{Software Engineer, Tech Lead}
+{Feb 2011 -- Feb 2013}
+{\bodytext{Private company in Czech Republic made SEO tools and SEO-related data harvesting. I built a crawling system using Java, Nutch, Solr, PostgreSQL, RabbitMQ}}
+}
+
+
+%------------------------------------------------
+
+\headedsection
+{DelightCash} {
+
+\headedsubsection 
+{\acr{Tech Lead, CTO}}
+{May 2009 -- Feb 2011}
+{\bodytext{Adult affiliate program. I managed all the technical processes around it.}}
+}
+
+%------------------------------------------------
+
+\headedsection
+{Exigen Services} {
+
+\headedsubsection 
+{\acr{Software Engineer}}
+{Jun 2006 -- Nov 2007}
+{\bodytext{Those days Exigen Services was the biggest software development outsourcing company in Eastern Europe and CIS countries. The main project I worked on is professional all-in-one database security and auditing solution for Oracle, Sybase, DB2, MySQL and Microsoft SQL Server used by 3M, IBM, JP Morgan Chase, Hewlett- Packard, Shell, Sony and many others. Java, Struts, SQL code specific to most popular relational databases(MySQL, Oracle, MS SQL Server, Sybase, IBM DB2). }}
+}
+
+\begin{flushleft}
+\textit{Please refer my \href{https://github.com/kushti}{GitHub account} for contributions to open source made by me(Scala mostly). Also please refer to \href{https://www.upwork.com/freelancers/~01de607007b5965edf}{my ODesk profile} for more jobs done along with recommendations.}
+\end{flushleft}
+
+%------------------------------------------------
+
+\spacedhrule{-0.2em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\roottitle{Education} % Top level section
+
+\headedsection
+{Information Technologies, Mechanics and Optics (ITMO) University}
+{\textsc{Saint-Petersburg, Russia}} {
+
+\headedsubsection 
+{\acr{Diploma of Specialist in Computer Systems}}
+{2001 -- 2007}
+{\bodytext{CS education providing both hardware and software knowledge with focus on embedded software development. A thesis was supervised by \href{https://scholar.google.ru/scholar?q=Ojiganov&btnG=&hl=en}{professor Ojiganov} and named like ``An Automated System for Recursive Code Scales Calculation''.}}
+}
+
+
+
+I also have unfinished PHD with few papers published in peer-reviewed journals(in Russian only to the moment) in the area of reactive software modelling with finite state machines. 
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Skills} % Top level section
+
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Technical specialties:}
+{Languages: Scala, Java, Groovy. In past I used C, C++, PHP to earn money. Playing with Haskell, Coq, OCaml, Idris. Many other languages were used (from Pascal to NuSMV) but now forgotten. Databases: PostgreSQL, Riak, MongoDB, Hazelcast, FoundationDB. Frameworks: Akka, Spray, Slick, MapDb.   
+Miscellanous: git, LaTEX, Markdown.}
+
+%------------------------------------------------
+
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Natural languages:}
+{Russian \textit{(mother tongue)}, English \textit{(full professional proficiency)}}
+
+%------------------------------------------------
+
+\spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+\end{document}
